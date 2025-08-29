@@ -1,8 +1,17 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+import Logo from "../assets/image.png"
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <header>
+      <nav>
+        <img src={ Logo } alt="Logo" />
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/cliente">Cliente</Link></li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 
